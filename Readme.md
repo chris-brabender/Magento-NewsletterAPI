@@ -26,6 +26,20 @@ Filters can be applied to limit the returned results by Store ID and Subscriber 
     ));
 
 Returns all subscribers from store_id 1 where subscriber_status is Subscribed
+ 
+ 
+## Response
+
+    array(
+    	[0]=>
+    	{
+        	["subscriber_id"]=>int
+	        ["customer_id"]=>int (id = 0 if not registered customer)
+    	    ["store_id"]=>int
+        	["subscriber_email"]=>string
+	        ["subscriber_status"]=>int
+    	}
+    )
 
 #### Subscription statuses
 
@@ -33,7 +47,7 @@ Returns all subscribers from store_id 1 where subscriber_status is Subscribed
 2. Not Activated
 3. Unsubscribed
 4. Unconfirmed
-
+5. 
 ## License
 
 TBC
