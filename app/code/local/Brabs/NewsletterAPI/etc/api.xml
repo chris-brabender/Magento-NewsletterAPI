@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <newsletter_subscribers translate="title" module="Brabs_NewsletterAPI">
+                <title>Newsletter API</title>
+                <acl>newsletter_subscribers</acl>
+                <model>brabs_newsletterapi/api</model>
+                <methods>
+                    <list translate="title" module="brabs_newsletterapi">
+                        <title>Retrieve list of newsletter subscribers</title>
+                        <acl>newsletter_subscribers/list</acl>
+                        <method>items</method>
+                    </list>
+                </methods>
+                <faults module="brabs_newsletterapi">
+                    <data_invalid>
+                        <code>100</code>
+                        <message>Invalid data.</message>
+                    </data_invalid>
+                </faults>
+            </newsletter_subscribers>
+        </resources>
+        <resources_alias>
+            <subscribers>newsletter_subscribers</subscribers>
+        </resources_alias>
+        <v2>
+            <resources_function_prefix>
+                <subscribers>newsletterSubscriber</subscribers>
+            </resources_function_prefix>
+        </v2>
+        <acl>
+            <resources>
+                <brabs_newsletterapi translate="title" module="brabs_newsletterapi">
+                    <title>Newsletter API</title>
+                    <sort_order>2000</sort_order>
+                    <list translate="title" module="brabs_newsletterapi">
+                        <title>List newsletter subscribers</title>
+                    </list>
+                </brabs_newsletterapi>
+            </resources>
+        </acl>
+    </api>
+</config>

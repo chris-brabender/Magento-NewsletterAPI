@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Brabs_NewsletterAPI>
+            <version>1.0.0</version>
+        </Brabs_NewsletterAPI>
+    </modules>
+    <global>
+        <helpers>
+            <brabs_newsletterapi>
+                <class>Brabs_NewsletterAPI_Helper</class>
+            </brabs_newsletterapi>
+        </helpers>
+        <models>
+            <brabs_newsletterapi>
+                <class>Brabs_NewsletterAPI_Model</class>
+            </brabs_newsletterapi>
+        </models>
+        <resources>
+            <brabs_newsletterapi_setup>
+                <setup>
+                    <module>Brabs_NewsletterAPI</module>
+                </setup>
+            </brabs_newsletterapi_setup>
+        </resources>
+    </global>
+</config>
